@@ -1,0 +1,396 @@
+html{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    margin-bottom: 2000px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+display: flex;
+background-color: rgb(0, 0, 0);
+padding: 10px;
+justify-content: space-around;
+padding-bottom: 50px;
+z-index: 10;
+padding-top:1% ;
+}
+
+.TT{
+    size: 25px;
+    width: 10%;
+    z-index: 10;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+  button:focus,
+  button:hover {
+    color: #ffffff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+.imh{
+    display: inline-block;
+    width: 100%;
+
+}
+
+.fond1{
+    background-color: black;
+    padding-bottom: 20px;
+
+}
+.fond2{
+    margin-top: 500px;
+    background-color: black;
+}
+.fondmax{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    object-fit: cover;
+}
+ .index{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+
+.pub{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+.pubi{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.savoirplus {
+    --color: white;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    margin-top: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .savoirplus:hover{
+    background-color: white;
+    color: black;
+}
+.float{
+    width: 25%; 
+    animation: float 6s ease-out infinite;
+    position: static;
+    z-index: 14;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.produit{
+    width: 20%;
+    justify-content: space-between;
+    border-radius: 10px; /* Bord arrondi */
+
+}
+h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+.logo{
+position: absolute;
+z-index: 5;
+width: 55%;
+background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+}
+.mini-titre{
+    position: absolute;
+    margin-top: 5%;
+    color: white;
+    font-size:75px ;
+    margin-left: 1%;
+}
+
+.minitxt{
+color: white;
+font-size: 25px;
+position: absolute;    
+margin-top: 12.5%;
+margin-left: 1%;
+}
+
+.savoirplus1 {
+    --color: white;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 1%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .savoirplus1:hover{
+    background-color: white;
+    color: black;
+   }
+
+.img{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+                                minmax(80px,1fr));
+    gap: 10px;
+}
+.last{
+    width: 65%;
+    border: 5px white solid;
+
+}
+.black{
+    background-color: black;
+}
+
+.tech{
+    background-color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.txtimgt{
+    font-size: 40px;
+
+}
+.bloc1, .bloc2, .bloc3{
+    text-align: center;
+}
+.h2{
+    font-size: 40px;
+}
+.b3{
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px){
+    .img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .float{
+        display: none;
+
+    }
+
+    .produit{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+
+    .nn { 
+        font-size: 20px;
+    }
+    nav.n1{ 
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 450px;
+            flex-direction: column;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            margin-left: -110%;
+            transition: 0.5s;
+    }
+    .n1.mobile-menu{
+        margin-left: 0;
+    }
+
+    .TT{
+        position: absolute;
+        padding: 2%;
+        width: 100px;
+        position: fixed;
+        z-index: 100000;
+    }
+    .b3{
+        right: 0;
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 50px;
+        padding: 1% 1% 1%;
+    }
+
+    .imh{
+        margin-top: 10%;
+    }
+    .logo{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    button{
+        font-size: 12.5px;
+    }
+    .h2{
+        font-size: 20px;
+    }
+    .pub{
+        font-size: 30px;
+    }
+    .pubi{
+        font-size: 20px;
+    }
+    .mini-titre{
+        font-size: 30px;
+    }
+    .minitxt{
+        font-size: 20px;
+    }
+    .txtimgt{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1750px)  {
+
+    .mini-titre{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .minitxt{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2.5%;
+    }
+    .savoirplus1{
+        position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        margin-top: 2%;
+    }
+    .fond2{
+        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur(10px); /* Appliquer un flou */
+        opacity: 1; 
+        box-shadow: 0px -10px 10px rgba(0, 0, 0, 1);
+    }
+    .imh{
+        
+
+    }
+    .middle{
+        margin-bottom: -15%;
+    }
+
+    
+
+}
